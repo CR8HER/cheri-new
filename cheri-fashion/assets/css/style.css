@@ -367,8 +367,11 @@ div .mt-m {
 	list-style: none;
 	padding: 0 22px;
 	cursor: pointer;
+	
+
 }
 .ayira-menu ul>li.menu-item-has-children:before {
+	
 	content: "\f107";
 	position: absolute;
 	font: normal normal normal 16px/1 FontAwesome;
@@ -390,12 +393,14 @@ div .mt-m {
 .mega-menu .menu-item-has-children:before {
 	display: none;
 }
+
 .ayira-menu ul li a {
-	font-size: 15px;
+	font-size: 24px;
 	color: #262626;
 	text-transform: uppercase;
 	font-weight: 400;
 	text-decoration: none;
+	font-family: 'Staatliches', cursive;
 }
 .ayira-menu ul li:hover a, .ayira-menu ul .active a:hover {
 	color: #F769c3;
@@ -810,6 +815,10 @@ position: absolute;
 	text-align: center;
 	height: 50px;
 	z-index: 9999;
+}
+.header-logo{
+	display: flex;
+	align-content: start;
 }
  @media only screen and (max-width: 991px) {
 .header-mobile {
@@ -1611,9 +1620,12 @@ position: absolute;
 /*----------------------------------------*/
 /*  3.3 Categories CSS
 /*----------------------------------------*/
-.categories {
+#womens{
+	display: flex;
+	justify-content: center;
 }
 .banner-item a img {
+	
 	width: 100%;
 	-webkit-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
@@ -7955,12 +7967,10 @@ background: rgb(239,239,239);
 }
 
 #cheri-logo{
-	height: 500px;
+	height: 350px;
 	width: 190%;
-	display: flex;
-	justify-content: center;
-	align-items: center right;
-	padding-left: 100px;
+	object-fit: contain;
+	object-position: center;
 	
 }
 .widget-text p {
@@ -7976,6 +7986,7 @@ background: rgb(239,239,239);
 	text-decoration: none;
 	margin-top: 5px;
 	display: block;
+	
 }
 .footer-top-info a:hover {
 	color: #ffbb42;
